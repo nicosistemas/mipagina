@@ -2,16 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>desde github page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logbook QRZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        iframe {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Esto es un js embebido en un html básico sobre status page</h1>
-    <script src="https://gosii1.statuspage.io/embed/script.js"></script>
-
-        <h1>QSL</h1>
-    ##<script src="https://gosii1.statuspage.io/embed/script.js"></script>
-    <iframe align="top" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/LU2FTI/" width="640"></iframe>
-
+    <div class="container">
+        <h1>Logbook de LU2FTI en QRZ</h1>
+        <p>Consulta los contactos registrados en el logbook de QRZ.</p>
+        <iframe align="top" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/LU2FTI/" width="640"></iframe>
+    </div>
 </body>
 </html>
